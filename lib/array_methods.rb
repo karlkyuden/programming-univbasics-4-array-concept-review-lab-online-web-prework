@@ -20,4 +20,11 @@ end
 
 def find_min_value(array)
   # Add your solution here
+  min = array[0]
+  array.length.times { |index|
+    if min > array[index]
+      min = array[index]
+    end
+  }
+  return min
 end
